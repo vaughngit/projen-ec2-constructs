@@ -36,10 +36,16 @@ project.gitpod.addCustomTask({
   command: 'yarn run watch',
 });
 
+// project.gitpod.addCustomTask({
+//   name: 'ConfigAlias',
+//   command: 'echo \'alias pj="npx projen"\' >> ~/.bashrc && echo \'alias cdk="npx cdk"\' >> ~/.bashrc',
+// });
+
 project.gitpod.addCustomTask({
-  name: 'ConfigAlias',
-  command: 'echo \'alias pj="npx projen"\' >> ~/.bashrc && echo \'alias cdk="npx cdk"\' >> ~/.bashrc',
+  name: 'ConfigCDK',
+  command: 'npm install -g aws-cdk',
 });
+
 
 project.gitpod.addCustomTask({
   name: 'Initialize & Configure AWS',

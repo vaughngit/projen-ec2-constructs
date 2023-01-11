@@ -22,3 +22,7 @@ dist
 tsconfig.tsbuildinfo
 /.eslintrc.json
 !.jsii
+cdk.out
+examples
+misc
+gitpod_scripts
