@@ -3,8 +3,8 @@
 tasks:
   - command: yarn run watch
     init: yarn install && yarn run build
-  - name: ConfigAlias
-    command: echo 'alias pj="npx projen"' >> ~/.bashrc && echo 'alias cdk="npx cdk"' >> ~/.bashrc
+  - name: ConfigCDK
+    command: npm install -g aws-cdk
   - name: Initialize & Configure AWS
     command: bash $GITPOD_REPO_ROOT/gitpod_scripts/gitpod_configure_aws.sh
   - name: Install DOTNET 6.0
